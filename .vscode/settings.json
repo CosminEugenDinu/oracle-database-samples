@@ -1,0 +1,8 @@
+{
+  // "files.associations": {
+  //   "*.sql": "oracle"
+  // },
+  "cSpell.enableFiletypes": [
+    "plsql"
+  ]
+}
