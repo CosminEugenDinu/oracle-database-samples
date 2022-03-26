@@ -1,0 +1,1 @@
+drop table pers cascade constraints;
