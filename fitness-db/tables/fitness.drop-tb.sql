@@ -1,1 +1,0 @@
-drop table fitness cascade constraints;
