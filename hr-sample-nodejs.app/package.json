@@ -1,0 +1,35 @@
+{
+  "name": "hr-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:dev": ". ${HOME}/.nvm/nvm.sh; nvm use 18 && { tsc --watch & nodemon; }"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "./src",
+      "src/**/*.spec.ts"
+    ],
+    "watch": [
+      "./dist"
+    ],
+    "exec": "node ./dist/index.js",
+    "delay": 500
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "oracledb": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.41",
+    "@types/oracledb": "^5.2.3",
+    "nodemon": "^2.0.16",
+    "typescript": "^4.7.3"
+  }
+}
