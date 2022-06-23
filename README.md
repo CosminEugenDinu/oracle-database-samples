@@ -101,7 +101,7 @@ cd ~/oracle/docker-images/OracleDatabase/SingleInstance/dockerfiles
 
 
 ------------------
-## Run Oracle Database in Docker Container
+## Build Oracle Database Docker Container
 -------------------
 ```bash
 sudo service docker start
