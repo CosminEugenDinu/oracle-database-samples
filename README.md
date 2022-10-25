@@ -38,10 +38,10 @@ sudo mkdir -p /opt/oracle
 # Download and extract basic Oracle basic package
 ```
 ```bash
-wget https://download.oracle.com/otn_software/linux/instantclient/216000/instantclient-basic-linux.x64-21.6.0.0.0dbru.zip
+wget wget https://download.oracle.com/otn_software/linux/instantclient/instantclient-basic-linuxx64.zip
 ```
 ```bash
-sudo unzip -d /opt/oracle instantclient-basic-linux.x64-21.6.0.0.0dbru.zip
+sudo unzip -d /opt/oracle instantclient-basic-linuxx64.zip
 ```
 
 ```bash
