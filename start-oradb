@@ -1,0 +1,5 @@
+#!/bin/bash
+
+. .env.oradb
+docker volume create $DOCKER_ORADATA_VOLUME_NAME
+docker compose -f oradb.docker-compose.yml --env-file .env.oradb up --detach 

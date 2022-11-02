@@ -1,0 +1,16 @@
+version: '2'
+services:
+  oradb:
+    image: $DOCKER_ORADB_IMAGE_NAME
+    container_name: $DOCKER_ORADB_CONTAINER_NAME
+    volumes:
+      - oradata-volume-docker:/opt/oracle/oradata
+    environment:
+      - "ORACLE_PWD=${ORADB_ADMIN_PASSWORD}"
+      - "ENABLE_ARCHIVELOG=true"
+    ports:
+      - "$ORADB_PORT:1521"
+      - "$ORADB_PORT_OEMEXPRESS:5500"
+volumes:
+  oradata-volume-docker:
+    external: true
