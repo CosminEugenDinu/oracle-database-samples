@@ -1,0 +1,4 @@
+#!/bin/bash
+
+. .env.oradb
+docker stop $DOCKER_ORADB_CONTAINER_NAME
